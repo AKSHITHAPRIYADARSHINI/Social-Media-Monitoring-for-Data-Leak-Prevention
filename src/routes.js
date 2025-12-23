@@ -44,6 +44,7 @@ import RTL from "layouts/rtl";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
+import SocialMediaMonitoringDashboard from "pages/SocialMediaMonitoring/SocialMediaMonitoringDashboard";
 
 // Soft UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
@@ -90,6 +91,15 @@ const routes = [
     route: "/virtual-reality",
     icon: <Cube size="12px" />,
     component: <VirtualReality />,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Social Media Monitoring",
+    key: "social-media-monitoring",
+    route: "/social-media-monitoring",
+    icon: <Settings size="12px" />,
+    component: <SocialMediaMonitoringDashboard />,
     noCollapse: true,
   },
   {
